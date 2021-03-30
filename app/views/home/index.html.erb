@@ -4,7 +4,7 @@
       <div class="card-body">
         <%= form_for @link, remote: true do |form| %>
           <h5 class="card-title">Enter a URL to shorten</h5>
-          <%= form.text_field :original_url, class: "form-control", placeholder: "Enter a URL..." %>
+          <%= form.text_field :original_url, class: "form-control field", placeholder: "Enter a URL..." %>
           <%= form.submit "Shorten", class: "btn btn-primary mt-2" %>
         <% end %>
       </div>

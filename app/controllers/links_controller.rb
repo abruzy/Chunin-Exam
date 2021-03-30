@@ -1,4 +1,6 @@
 class LinksController < ApplicationController
+  skip_before_action :verify_authenticity_token
+
   def create
     shortener = Shortener.new(link_params[:original_url])
     @link = shortener.generate_short_link
